@@ -1,0 +1,37 @@
+
+{% extends 'service/base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <nav class="navbar">
+        <ul>
+            <li> <a   href="">Home</a></li>
+            <li> <a   href="{% url 'services' %}">Services</a></li>
+            <li> <a  href="{% url 'signup' %}">Signup</a></li>
+            <li> <a  href="{% url 'login' %}">Login</a></li>
+            <li> <a   href="{% url 'contact' %}">Contact</a></li>
+            
+
+        </ul>
+    </nav>
+
+    <br><br>
+
+
+
+<img id ="manimage" src="{% static 'service/images/manimage.png'%}" alt="">
+<img id="switchimage" src="{% static 'service/images/switchimage.webp'%}" alt="">
+<img id="acimage" src="{% static 'service/images/acimage.jpg' %}" alt="">
+{% comment %} 
+<a id="signupbtn" href="{% url 'signup' %}" class="btn btn-primary btn-sm">Signup</a>
+<a id="loginbtn"href="{% url 'login' %}" class="btn btn-warning btn-sm">Login</a>
+<a id="aboutusbtn" href="" class="btn btn-warning btn-sm">Aboutus</a> {% endcomment %}
+
+
+
+
+{% endblock content %}
+
+
+

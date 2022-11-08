@@ -1,0 +1,21 @@
+{% extends 'service/base.html' %}
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    {{error}}
+    {% endfor %}
+    {% endif %}
+
+    {% for fm in form %}
+    {{fm.label_tag}} {{fm}}  {{fm.errors|striptags}} <br><br>
+    {% endfor %}
+
+    <input type="submit" class="btn btn-primary btn-sm"value="Change">
+</form>
+<br>
+<a href="{% url 'logout' %}" class="btn btn-danger btn-sm">Logout</a>
+
+{% endblock content %}

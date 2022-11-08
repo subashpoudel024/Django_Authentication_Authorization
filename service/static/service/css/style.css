@@ -1,0 +1,126 @@
+
+
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 15px;
+    font-size: 20px;
+}
+.navbar{
+    background-color:rgb(180, 169, 169);
+    border-radius: 40px;
+    height: 60px;
+}
+
+.navbar ul{
+    color: black;
+    overflow: auto;
+    }
+
+.lists{
+    color:black;
+
+    }
+
+.navbar li a{
+    text-decoration: none;
+    color: black;
+
+    }
+
+.search{
+    float: right;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 60px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+
+            
+    }
+
+.navbar input{
+    padding: 10px;
+    border-radius: 30px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    }
+
+#search_inp{
+    font-size: 20px;
+        }
+
+#manimage{
+    float: left;
+    width: 350px;
+    height: 300px;
+}
+
+#acimage{
+    float: right;
+    width: 280px;
+    height: 300px;
+
+}
+#switchimage{
+    float: none;
+    width: 450px;
+    height: 300px;}
+
+#signupbtn{
+    float: none;
+    width: 70px;
+    height: 40px;
+          
+    background-color: rgb(12, 97, 43);
+    color: white;  
+    border-color: black;
+    }
+
+#loginbtn{
+    float: none;
+    width: 70px;
+    height: 40px;
+            
+    background-color: rgb(46, 46, 175);
+    color: white;
+    border-color: black;
+    }
+
+#aboutusbtn{
+    float: none;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(71, 71, 97);
+    color: white;
+    border-color: black; 
+    }
+
+#welcome{
+    background-color: white;
+    color: darkblue;
+    
+}
+#heading{
+    background-color: rgb(100, 154, 235);
+    text-align: center;
+    margin: 20px;
+}
+
+#service{
+    background-color: white;
+    color: darkblue;
+    
+}
+
+.ol{
+    background-color: white;
+    color:rgb(44, 41, 41);
+}
+
+#contact{
+    background-color: white;
+    color: darkblue;
+    
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kamal raj Enterprises.</title>
+    <link rel="stylesheet" href="{% static 'service/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'service/css/style.css' %}">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h2  class="text-center bg-secondary p-2 text-dark bg-opacity-75 rounded-pill"> ABC Enterprises.</h2>
+        {% block content %}{% endblock content %}
+
+    </div>
+
+
+    <script src="{% static 'service/js/jquery.js'%}"></script>
+    <script src="{% static 'service/js/popper.js'%}"></script>
+    <script src="{% static 'service/js/bootstrap.js'%}"></script>
+    
+</body>
+</html>
