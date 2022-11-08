@@ -1,0 +1,33 @@
+
+{% extends 'service/base.html' %}
+{% load static %}
+{% block content %}
+<br>
+
+<h4 id="welcome">Welcome {{name}}. You can also edit your infos here and save them. </h4>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    {% if form.non_field_errors %}
+    {% for error in form.non_field_errors %}
+    <p>{{errors}}</p>
+    {% endfor %}
+    {% endif %}
+
+    {% for fm in form %}
+    {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+    {% endfor %}
+    <input class="btn btn-success btn-sm" type="submit" value="Save">
+</form>
+<br>
+<a href="{% url 'changepass' %}" class="btn btn-primary btn-sm">Change Password</a>
+
+<a href="{% url 'logout' %}" class="btn btn-danger btn-sm">Logout</a>
+<a href="{% url 'homepage' %}" class="btn btn-dark btn-sm">Go to homepage</a>
+
+
+
+{% endblock content %}
+
+
+

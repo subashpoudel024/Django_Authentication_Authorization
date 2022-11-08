@@ -1,0 +1,27 @@
+
+{% extends 'service/base.html' %}
+{% load static %}
+{% block content %}
+<br>
+
+<h3 id="service"> Our Services are:</h3>
+
+<ol class="ol">
+    <li>Fridge Repairing.</li>
+    <li>AC Repairing.</li>
+    <li>Switch Repairing.</li>
+    <li>Fitting the electric equipments.</li>
+
+</ol>
+
+<a href="{% url 'signup' %}" class="btn btn-success btn-sm">Signup Here</a>
+<br><br>
+<a href="{% url 'login' %}" class="btn btn-primary btn-sm">Login Here</a>
+<br><br>
+<a href="{% url 'homepage' %}" class="btn btn-dark btn-sm">Go to homepage</a>
+
+
+    
+
+
+{% endblock content %}

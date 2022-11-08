@@ -1,0 +1,22 @@
+
+{% extends 'service/base.html' %}
+{% block content %}
+<br>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {% for fm in form %}
+    {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+    {% endfor %}
+    <input type="submit" class ="btn btn-success btn-sm "value="Submit">
+</form>
+<br>
+<a href="{% url 'login' %}" class="btn btn-primary btn-sm">Login</a>
+<a href="{% url 'homepage' %}" class="btn btn-dark btn-sm">Go to homepage</a>
+
+
+
+{% endblock content %}
+
+
+
